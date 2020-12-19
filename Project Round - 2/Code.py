@@ -107,7 +107,7 @@ for i in range(lg1):
 # Recognizing relationships among various entities present in book-2 sentence-wise for each paragraph using 'data2'
 print("\n\t\t\t\t\tEntity Relationship for BOOK-2:")
 for i in range(lg2):
-	dt2 = data2[i].split('.')												# Splitting the paragraph present in 'data2' to create a list(dt2) of sentences
+	dt2 = data2[i].split('.')								# Splitting the paragraph present in 'data2' to create a list(dt2) of sentences
 	for j in range(len(dt2)):
 		piano_doc = sp(dt2[j])
 		print("\n\tParagraph No. -", i+1, ", sentence no. -", j+1)
