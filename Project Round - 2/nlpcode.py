@@ -1,7 +1,7 @@
-from nltk.corpus import wordnet as wn 	# For finding the categories of nouns and verbs 
+from nltk.corpus import wordnet as wn 		# For finding the categories of nouns and verbs 
 from textblob import TextBlob 			# For pos tagging to find nouns and verbs from the data
 import matplotlib.pyplot as plt 		# For plotting frequency histograms
-import spacy							# For entity recognition and relationship
+import spacy					# For entity recognition and relationship
 
 # Opening book - 1 and reading its data in 'T1'
 f1 = open('book1023.txt', 'r', encoding = 'utf-8')
@@ -150,7 +150,7 @@ for i in range(lg1):
 		piano_doc = sp(dt1[j])
 		print("\n\tParagraph No. -", i+1, ", sentence no. -", j+1)
 		for token in piano_doc:
-			print (token.text, token.tag_, token.head.text, token.dep_)		# Finding and printing relationship among entities present in a sentence
+			print (token.text, token.tag_, token.head.text, token.dep_)						# Finding and printing relationship among entities present in a sentence
 
 # Recognizing relationships among various entities present in book-2 sentence-wise for each paragraph using 'data2'
 print("\n\t\t\t\t\tEntity Relationship for BOOK-2:")
@@ -160,4 +160,4 @@ for i in range(lg2):
 		piano_doc = sp(dt2[j])
 		print("\n\tParagraph No. -", i+1, ", sentence no. -", j+1)
 		for token in piano_doc:
-			print (token.text, token.tag_, token.head.text, token.dep_)		# Finding and printing relationship among entities present in a sentence
+			print (token.text, token.tag_, token.head.text, token.dep_)						# Finding and printing relationship among entities present in a sentence
